@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME | atHOMEopathy</title>
+    <link rel="shortcut icon" href="/static/img/main_logo.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css"
+        integrity="sha384-5QFXyVb+lrCzdN228VS3HmzpiE7ZVwLQtkt+0d9W43LQMzz4HBnnqvVxKg6O+04d" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/css/style.css">
+     <style>
+         body{
+             background-color: #F6F5F5;
+         }
+     </style>
+
+</head>
+
+<body>
+            <nav class="navbar">
+    <div id="trapezoid">
+      <a class="sub-home" href="#">Home</a>
+      <a href="#About" class="expandHome">About</a>
+      <div class="subnav">
+        <button class="subnavbtn">Clients<i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+          <div id="subnav-trapezoid">
+            <a href="#Clients">Burger King</a>
+            <a href="#Clients">Southwest Airlines</a>
+            <a href="#Clients">Levi Strauss</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="subnav">
+        <button class="subnavbtn">Services<i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+          <div class="subnav-trapezoid">
+            <a href="#Services">Print Design</a>
+            <a href="#Services">Web Design</a>
+            <a href="#Services">Mobile App Development</a>
+          </div>
+        </div>
+      </div>
+      <a href="/logout" class="expandHome">Logout</a>
+    </div>
+  </nav>
+  </div>
+
+
+            <br><br>
+             <div class="container py-5 px-5">
+                <div class=" box container m-5 px-5">
+                    <div class="row py-5">
+                        <form method="POST" action="/login">
+                            <p class="text-danger">{{error_msg}}</p>
+                            <p class="text-success">{{success_msg}}</p>
+                            <div class="col">
+                                <div class="form-group">
+                                    <h1>Welcome/ Welcome back!</h1>
+
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" placeholder="Email" name="email_id">
+
+                                </div>
+                                <div class="form-group">
+
+                                    <input type="password" class="form-control" id="exampleInputPassword1"
+                                        placeholder="Password" name="password">
+                                </div>
+                                
+                                <div class="col">
+                                    <a href="/forgotpass"><button type="button" class="btn btn-link forgotpass">Forgot
+                                            Password</button></a>
+                                </div>
+                                <input type="Submit" class="btn btn-primary btn-lg btn-block login" value="LOGIN"><br>
+                                <a href="/register_page" style="text-decoration: none;"><button type="button"
+                                        class="btn btn-primary btn-lg btn-block sign_up ">SIGN UP </button></a>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <footer class="bg-light text-center text-lg-start fixed-bottom">
+        <!-- Copyright -->
+        <div class="text-center p-3" id="footer" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright
+        </div>
+        <!-- Copyright
+            </footer> -->
+        </div>
+        <script src="/static/js/style.js"></script>
+</body>
+
+
+</html>

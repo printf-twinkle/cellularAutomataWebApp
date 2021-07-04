@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Voyage Slider | GSAP</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap"rel="stylesheet'>
+<link rel="stylesheet" href="/static/css/new_home.css">
+<link rel="stylesheet" href="/static/css/navbar.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container navbar_container py-5">
+    <div class="html-container">
+        <div class="html-section">
+          <div class="html-project">
+            <div class="navigation">
+              <nav>
+                <ul class="nav-type">
+                  <li><a href="https://codepen.io/EneergeticTomy/" target="_blank" class="active">Home</a></li>
+                  <li><a href="https://codepen.io/TomikaBoy/full/LqMpaE" target="_blank" class="active1">About</a></li>
+                  <li><a href="https://codepen.io/" target="_blank" class="active2">Contact</a></li>
+                  <li><a href="https://w3schools.com/" target="_blank" class="active3">Support</a></li>
+                  <div class="line"></div>
+                  <li><a><i class="fa fa-search" onclick="show()">
+                    </i></a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <noscript>
+        <div class="first-line">
+          <div class="linear">
+            <div class="line-w5">
+              
+            </div>
+          </div>
+        </div>
+        </noscript>
+  <template>
+        <div class="flash-fluid">
+          <div class="flash-time">
+            <div class="flash-GIF">
+              
+            </div>
+          </div>
+         </div>
+  </template>
+  <noscript>     
+        <div class="cyrcle-center">
+          <div class="radial-cyrcle">
+            
+          </div>
+        </div>
+  </noscript>
+      </div>
+  
+      
+      
+</div>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<div class="container the_carousal">
+<div class="app">
+
+	<div class="cardList">
+		<button class="cardList__btn btn btn--left">
+			<div class="icon">
+				<svg>
+					<use xlink:href="#arrow-left"></use>
+				</svg>
+			</div>
+		</button>
+
+		<div class="cards__wrapper">
+			<div class="card current--card">
+				<div class="card__image">
+					<img src="https://source.unsplash.com/Z8dtTatMVMw" alt="" />
+				</div>
+			</div>
+
+			<div class="card next--card">
+				<div class="card__image">
+					<img src="https://source.unsplash.com/9dmycbFE7mQ" alt="" />
+				</div>
+			</div>
+
+			<div class="card previous--card">
+				<div class="card__image">
+					<img src="https://source.unsplash.com/m7K4KzL5aQ8" alt="" />
+				</div>
+			</div>
+		</div>
+
+		<button class="cardList__btn btn btn--right">
+			<div class="icon">
+				<svg>
+					<use xlink:href="#arrow-right"></use>
+				</svg>
+			</div>
+		</button>
+	</div>
+
+	<div class="infoList">
+		<div class="info__wrapper">
+			<div class="info current--info">
+				<h1 class="text name">Highlands</h1>
+				<h4 class="text location">Scotland</h4>
+				<p class="text description">The mountains are calling</p>
+			</div>
+
+			<div class="info next--info">
+				<h1 class="text name">Machu Pichu</h1>
+				<h4 class="text location">Peru</h4>
+				<p class="text description">Adventure is never far away</p>
+			</div>
+
+			<div class="info previous--info">
+				<h1 class="text name">Chamonix</h1>
+				<h4 class="text location">France</h4>
+				<p class="text description">Let your dreams come true</p>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="app__bg">
+		<div class="app__bg__image current--image">
+			<img src="https://source.unsplash.com/Z8dtTatMVMw" alt="" />
+		</div>
+		<div class="app__bg__image next--image">
+			<img src="https://source.unsplash.com/9dmycbFE7mQ" alt="" />
+		</div>
+		<div class="app__bg__image previous--image">
+			<img src="https://source.unsplash.com/m7K4KzL5aQ8" alt="" />
+		</div>
+	</div>
+</div>
+</div>
+
+<div class="container py-5 px-5">
+    <div class=" box container m-5 px-5">
+        <div class="row py-5">
+            <form method="POST" action="/login">
+                <p class="text-danger">{{error_msg}}</p>
+                <p class="text-success">{{success_msg}}</p>
+                <div class="col">
+                    <div class="form-group">
+                        <h1>Welcome/ Welcome back!</h1>
+
+                        <input type="email" class="form-control" id="exampleInputEmail1"
+                            aria-describedby="emailHelp" placeholder="Email" name="email_id">
+
+                    </div>
+                    <div class="form-group">
+
+                        <input type="password" class="form-control" id="exampleInputPassword1"
+                            placeholder="Password" name="password">
+                    </div>
+                    
+                    <div class="col">
+                        <a href="/forgotpass"><button style="color: black;" type="button">Forgot
+                                Password</button></a>
+                    </div>
+                    <input type="Submit" class="btn btn-primary" style="cursor: pointer; background-color: #A7C4BC;" value="LOGIN"><br>
+                    <a href="/register_page" style="text-decoration: none; cursor: pointer;"><button type="button"
+                            style="color:#F9F9F9; background-color: #5E8B7E;">SIGN UP </button></a>
+                        <br><br>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="loading__wrapper">
+	<div class="loader--text">Loading...</div>
+	<div class="loader">
+		<span></span>
+	</div>
+</div>
+
+
+
+<svg class="icons" style="display: none;">
+	<symbol id="arrow-left" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+		<polyline points='328 112 184 256 328 400'
+					 style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+	</symbol>
+	<symbol id="arrow-right" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+		<polyline points='184 112 328 256 184 400'
+					 style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+	</symbol>
+</svg>
+
+  
+
+<!-- partial -->
+  <script src='https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js'></script>
+<script  src="/static/js/new_home.js"></script>
+<script src="/static/js/navbar.js"></script>
+
+</body>
+</html>

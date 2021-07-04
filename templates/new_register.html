@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Wavy login form</title>
+  <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/new_register.css">
+
+</head>
+<body>
+ 
+<form class="login" method="post" action="/register">
+<h1>{{error_msg}}</h1>
+{% if success_msg %}
+ <h1>{{success_msg}}</h1>
+ <a href="/" style="text-decoration: none;color:#321F28;font-size: medium;font-style: italic;font-weight: 500;">Click here to go the home page</a>
+{% endif %}
+
+ <h1>{{usr_exists_msg}}</h1>
+  <input type="text" placeholder="Full Name"  name="name" required>
+  <input type="email" placeholder="Email id"  name="email_id" required>
+  <input type="password" placeholder="Password"  name="password" style="width: fit-content;" required>
+  <input type="submit" style="cursor: pointer; background-color: #2F5D62; color: aliceblue; padding: 5%;" value="Register">
+</form>
+
+<a href="https://codepen.io/davinci/" target="_blank">check my other pens</a>
+<!-- partial -->
+  
+</body>
+</html>
